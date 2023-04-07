@@ -8,8 +8,17 @@
     <script type="module" crossorigin src="./assets/index-0b6d3ed3.js"></script>
     <link rel="stylesheet" href="./assets/index-d526a0c5.css">
   </head>
-  <body>
+  <body onmousemove="running(event)">
     <div id="root"></div>
+    <p id="demo"></p>
     
+    <script>
+      function running(e) {
+        let x = e.clientX;
+        let y = e.clientY;
+        let coor = "Coordinates: (" + x + "," + y + ")";
+        document.getElementById("demo").innerHTML = coor;
+      }
+      </script>
   </body>
 </html>
