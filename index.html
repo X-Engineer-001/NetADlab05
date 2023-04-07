@@ -4,19 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>黃允誠</title>
   </head>
-  <body onmousemove="running(event)">
+  <body>
     <div id="root"></div>
-    <p id="demo"></p>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      function running(e) {
-        let x = e.clientX;
-        let y = e.clientY;
-        let coor = "Coordinates: (" + x + "," + y + ")";
-        document.getElementById("demo").innerHTML = coor;
-      }
-      </script>
   </body>
 </html>

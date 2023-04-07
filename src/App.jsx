@@ -5,29 +5,25 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const [text, setText] = useState("智")
+  const clicked = () => {
+    setCount(prev => prev === 0 ? 87 : 0)
+    setText(prev => prev === "智" ? "智障" : "智")
+  }
   return (
     <div className="App">
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src={reactLogo} className="logo react" alt="React logo" />
       </div>
-      <h1>Vite + React</h1>
+      <h1>黃允誠</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={clicked}>
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+        大愚若{text}：我有很多<code>小</code>聰明，多到我可以用我的<code>小</code>聰明淹沒你，但我終歸是個笨蛋。
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   )
 }
